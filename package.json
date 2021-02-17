@@ -20,6 +20,9 @@
     "react": "^17.0.1",
     "scripts": "^0.1.0"
   },
+  "engines": {
+    "node": "14.15.4"
+  },
   "devDependencies": {},
   "description": ""
 }

@@ -28,7 +28,7 @@ const pg = knex(
 
 app.use(bodyParser.json());
 
-app.get("/",(req,res)=>{res.send("Working........")})
+app.get("/",(req,res)=>{res.send("Working........")});
 
 app.post("/signin",(req, res) => { signin.handleSignIn(req,res,pg,bcrypt)});
 
@@ -41,4 +41,4 @@ app.get("/profile/:id",(req,res)=>{profile.handleProfile(req,res,pg)});
 app.put("/image",(req,res) => {image.handleImage(req,res,pg)});
 
 
-app.listen(process.env.PORT||4000,()=>console.log('server running on port'))
+app.listen(process.env.PORT||4000,()=>{console.log('server running on port')});
